@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .col{
+        background-color: black;
+        color: antiquewhite;
+    }
+</style>
+<body class="col">
+    <div>
+        <h1 id="title" class="heading">Lorem ipsum dolor sit amet <span style="display: none;">hi ji</span>.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        <input type="password" name="ku" id="tyr">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+    <script>
+        // document.getElementById('title') output <h1 id="title" class="heading">Lorem ipsum dolor sit amet.</h1>
+        // document.getElementById('title').id output title
+        // document.getElementById('title').className output heading
+        // document.getElementById('title').getAttribute('id') output title
+        // document.getElementById('title').setAttribute('class','test'); output class is changed into test
+        // const title=document.getElementById('title');
+        // console.log(title); <h1 id="title" class="heading">Lorem ipsum dolor sit amet.</h1>
+        // change the color
+        // title.style.backgroundColor='green';
+        // padding
+        // title.style.padding="15px";
+        // how to get content 
+        // title.textContent; output Lorem ipsum dolor sit amet hi ji .
+        // title.innerHTML  output Lorem ipsum dolor sit amet.
+        // title.innerText  output Lorem ipsum dolor sit amet.
+        // document.querySelector('h1') output it hive only first h1 but selector all give all h1 <h1 id="title" class="heading">Lorem ipsum dolor sit amet <span style="display: none;">hi ji</span>.</h1>
+    // document.querySelector('#title') output  <h1 id="title" class="heading">Lorem ipsum dolor sit amet <span style="display: none;">hi ji</span>.</h1>
+//    document.querySelector('.heading')output  <h1 id="title" class="heading">Lorem ipsum dolor sit amet <span style="display: none;">hi ji</span></h1>
+//    document.querySelector('input[type="password"]'); <input type="password" name="ku" id="tyr">
+// how to access the list as a array
+// const templist=document.querySelectorAll('li');
+// templist[0].style.color='green';
+// change the color of all list elements
+// templist.array.forEach(element => {
+//     element.style.backgroundColor='green'
+// });
+   </script>
+</body>
+</html>

@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<style>
+    #col
+    {
+        background-color: red;
+    }
+</style>
 
+<body id="col">
+    <div>
+        <!-- change by hello everyone -->
+        <h1 id="hel">How are You Lorem, ipsum.</h1> 
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <script>
+        document.getElementById("hel").innerHTML="<h1> Hello everyone</h1>";
+    </script>
+</body>
+</html>
